@@ -10,7 +10,7 @@ import UIKit
 
 class ListViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
-    fileprivate let tableData = ListViewControllerTableData()
+    fileprivate let tableData = TableData()
 
     override func viewDidLoad() {
         super.viewDidLoad()

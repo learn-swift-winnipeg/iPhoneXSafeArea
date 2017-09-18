@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 final class DetailsViewController: UIViewController {
+    @IBOutlet private weak var scrollView: UIScrollView!
+    @IBOutlet weak var innerView: UIView!
     @IBOutlet private weak var label: UILabel!
     
     override func viewDidLoad() {
@@ -19,7 +21,9 @@ final class DetailsViewController: UIViewController {
     }
     
     private func setupView() {
-        label.text = ListViewControllerTableData().titles.joined(separator: "\n\n")
+        
+        
+        label.text = TableData().titles.joined(separator: "\n\n")
     }
     
     @IBAction func CloseButtonTapped(_ sender: UIBarButtonItem) {
