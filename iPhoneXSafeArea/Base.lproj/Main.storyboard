@@ -68,7 +68,7 @@
         <!--iPhone X-->
         <scene sceneID="wng-k2-Caq">
             <objects>
-                <viewController id="Dcv-1r-m2J" customClass="DetailsViewController" customModule="iPhoneXSafeArea" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Dcv-1r-m2J" customClass="DetailsViewController" customModule="iPhoneXSafeArea" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="weI-wA-CAo"/>
                         <viewControllerLayoutGuide type="bottom" id="idq-EA-1fR"/>
@@ -77,31 +77,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGf-Vs-B1b">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="bRJ-2C-lZO"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem title="Details" id="nLL-d8-rFX"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="jc6-Ov-bON"/>
-                                    <barButtonItem title="Buy" id="mwr-HP-MQ0"/>
-                                </items>
-                            </toolbar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRq-DW-3xe">
                                 <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cG0-Kg-2ZP">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="441"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cG0-Kg-2ZP">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="471"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smiling-guy-in-phone" translatesAutoresizingMaskIntoConstraints="NO" id="PcL-g2-KNw">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="359.5"/>
+                                                <rect key="frame" x="0.0" y="30" width="375" height="359.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="PcL-g2-KNw" secondAttribute="height" multiplier="1.04334" id="dt7-iH-tb5"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41G-tT-3Jo">
-                                                <rect key="frame" x="20" y="389.5" width="335" height="21.5"/>
+                                                <rect key="frame" x="20" y="419.5" width="335" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -112,11 +101,12 @@
                                             <constraint firstAttribute="trailing" secondItem="PcL-g2-KNw" secondAttribute="trailing" id="5sW-wo-D2m"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="41G-tT-3Jo" secondAttribute="trailing" id="62T-yf-YZL"/>
                                             <constraint firstItem="41G-tT-3Jo" firstAttribute="leading" secondItem="cG0-Kg-2ZP" secondAttribute="leadingMargin" id="6Sp-4s-33h"/>
-                                            <constraint firstItem="PcL-g2-KNw" firstAttribute="top" secondItem="cG0-Kg-2ZP" secondAttribute="top" id="6xe-Rf-ZWw"/>
+                                            <constraint firstItem="PcL-g2-KNw" firstAttribute="top" secondItem="cG0-Kg-2ZP" secondAttribute="top" constant="30" id="6xe-Rf-ZWw"/>
                                             <constraint firstAttribute="bottom" secondItem="41G-tT-3Jo" secondAttribute="bottom" constant="30" id="H5N-l8-dpl"/>
                                             <constraint firstItem="41G-tT-3Jo" firstAttribute="top" secondItem="PcL-g2-KNw" secondAttribute="bottom" constant="30" id="nAH-w8-W64"/>
                                             <constraint firstItem="PcL-g2-KNw" firstAttribute="leading" secondItem="cG0-Kg-2ZP" secondAttribute="leading" id="zgr-17-oQZ"/>
                                         </constraints>
+                                        <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="20"/>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -125,19 +115,26 @@
                                     <constraint firstItem="cG0-Kg-2ZP" firstAttribute="top" secondItem="cRq-DW-3xe" secondAttribute="top" id="Hby-vF-kc4"/>
                                     <constraint firstAttribute="trailing" secondItem="cG0-Kg-2ZP" secondAttribute="trailing" id="skd-k4-Lcb"/>
                                 </constraints>
-                                <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="20"/>
                             </scrollView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGf-Vs-B1b">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Details" id="nLL-d8-rFX"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="jc6-Ov-bON"/>
+                                    <barButtonItem title="Buy" id="mwr-HP-MQ0"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="cRq-DW-3xe" secondAttribute="trailing" id="ARe-5M-6Mp"/>
+                            <constraint firstItem="cRq-DW-3xe" firstAttribute="top" secondItem="weI-wA-CAo" secondAttribute="bottom" id="C5w-aw-waF"/>
                             <constraint firstItem="KGf-Vs-B1b" firstAttribute="top" secondItem="cRq-DW-3xe" secondAttribute="bottom" id="Vw3-hY-mbq"/>
                             <constraint firstItem="KGf-Vs-B1b" firstAttribute="leading" secondItem="MBN-oY-fHI" secondAttribute="leading" id="W06-qV-1pw"/>
                             <constraint firstItem="cG0-Kg-2ZP" firstAttribute="width" secondItem="MBN-oY-fHI" secondAttribute="width" id="boj-AM-Oak"/>
                             <constraint firstItem="idq-EA-1fR" firstAttribute="top" secondItem="KGf-Vs-B1b" secondAttribute="bottom" id="dHd-hb-91h"/>
                             <constraint firstAttribute="trailing" secondItem="KGf-Vs-B1b" secondAttribute="trailing" id="foc-qe-kWO"/>
                             <constraint firstItem="cRq-DW-3xe" firstAttribute="leading" secondItem="MBN-oY-fHI" secondAttribute="leading" id="kD8-iv-EET"/>
-                            <constraint firstItem="cRq-DW-3xe" firstAttribute="top" secondItem="weI-wA-CAo" secondAttribute="bottom" id="ym9-pI-Ogt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="iPhone X" id="W6M-GY-snF">
