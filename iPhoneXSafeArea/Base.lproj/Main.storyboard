@@ -123,6 +123,7 @@
                                 </items>
                             </toolbar>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="cRq-DW-3xe" secondAttribute="trailing" id="ARe-5M-6Mp"/>
                             <constraint firstItem="cRq-DW-3xe" firstAttribute="top" secondItem="weI-wA-CAo" secondAttribute="bottom" id="C5w-aw-waF"/>
