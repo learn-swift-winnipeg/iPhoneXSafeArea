@@ -58,7 +58,6 @@ extension ListViewController: UITableViewDataSource {
         guard let view = view as? UITableViewHeaderFooterView else {
             fatalError("Header view wasn't a UITableViewHeaderFooterView.")
         }
-        view.contentView.backgroundColor = UIColor.red.withAlphaComponent(0.75)
         view.textLabel?.textColor = .white
     }
     
